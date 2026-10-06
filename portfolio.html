@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio-Page</title>
+	<style>
+		
+	@font-face {
+    font-family:'Agbalumo';
+    src: url('Agbalumo-Regular.ttf') format('truetype');
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
+
+body { 
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+        }
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+        }
+
+h1 {
+	font-family: 'Agbalumo', serif;
+    font-size: 68px;
+    color: #2c3e50;
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+        }
+
+.subtitle {
+    font-size: 23px;
+    color: #34495e;
+    font-weight: 300;
+        }
+
+.portfolio-container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+.gallery {
+    display: flex;
+	justify-content: center;
+	justify-content: space-around;
+    padding: 20px;
+        }
+
+figure {
+    flex: 0 0 auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+figure:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+a {
+    text-decoration: none;
+    display: iline-block;
+        }
+
+figure img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+        }
+
+figure img:hover {
+    border-color: #3498db;
+        }
+
+figcaption {
+    margin-top: 15px;
+    padding: 0 10px;
+        }
+
+figcaption .title {
+	font-family: 'Agbalumo', serif;
+    font-size: 16px;
+    font-weight: none;
+    color: #2c3e50;
+    margin-bottom: 5px;
+        }
+
+figcaption .description {
+    font-size: 13px;
+    color: #7f8c8d;
+    line-height: 1.4;
+    max-width: 200px;
+        }
+.photos{
+	text-align: center;
+	font-family: 'Agbalumo';
+    font-size: 48px;
+    color: #2c3e50;
+	margin-top: 30px		
+		}
+		
+.colophon {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.6;
+        }
+		
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 2px 3px 6px gray;
+	text-align: center;
+		}
+ th {
+    background-color:lightslategray;
+    color: white;
+    padding: 10px;
+	  }
+ td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+		}
+ tbody tr:nth-child(odd) {
+    background: whitesmoke;
+  }
+		
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 584px 484px;
+	grid-template-rows: 450px 420px 600px;
+    gap: 10px;
+    justify-content: center;
+	margin-top: 50px
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+
+.grid-gallery img:nth-child(1) {
+    grid-area: 1 / 1/ 3/ 2;
+}
+
+.grid-gallery img:nth-child(2) {
+    grid-area: 1 / 2;
+}
+
+.grid-gallery img:nth-child(3) {
+    grid-area: 2 / 2;
+}
+
+.grid-gallery img:nth-child(4) {
+    grid-area: 3/ 1 / 4/ 3;
+		
+		
+</style>
+
+</head>
+
+<body>
+	<div class="header">
+        <h1>Portfolio</h1>
+        <p class="subtitle">Dog Portraits Collection</p>
+    </div>
+
+    <div class="portfolio-container">
+        <div class="gallery">
+            
+           
+<figure>
+     <a href="dog1.jpg" target="_blank">
+     <img src="dog1.jpg" width="350" height="400" alt/>
+     </a>
+<figcaption>
+     <div class="title">Tiny Dreams</div>
+     <div class="description">A serene portrait of a gentle golden color dog captured in soft, peaceful tones against a calming blue backdrop.</div>
+    </figcaption>
+</figure>
+
+           
+<figure>
+     <a href="dog2.jpg" target="_blank">
+     <img src="dog2.jpg" width="340" height="300" alt/>
+     </a>
+<figcaption>
+     <div class="title">Noble Spirit</div>
+     <div class="description">A striking portrait of a dignified dark dog with an elegant red collar, set against a vibrant blue background.</div>
+    </figcaption>
+</figure>
+
+            
+<figure>
+     <a href="dog3.jpg" target="_blank">
+     <img src="dog3.jpg" width="280" height="370" alt/>
+     </a>
+<figcaption>
+     <div class="title">Bright Personality</div>
+     <div class="description">A joyful mixed-breed portrait on a vibrant turquoise ground, radiating warmth and playful energy.</div>
+     </figcaption>
+</figure>
+
+            
+<figure>
+      <a href="dog4.jpg" target="_blank">
+      <img src="dog4.jpg" width="290" height="380" alt/> 
+	  </a>
+<figcaption>
+      <div class="title">Cozy Comfort</div>
+      <div class="description">A tender scene of a sweet terrier nestled in soft blankets, capturing a moment of peaceful contentment.</div>
+      </figcaption>
+</figure>
+
+     
+<figure>
+      <a href="dog5.jpg" target="_blank">
+      <img src="dog5.jpg" width="240" height="290" alt=""/>
+	  </a>
+<figcaption>
+      <div class="title">Scooter's Joy</div>
+      <div class="description">A cheerful portrait of a lovable companion on a bright blue background, complete with a personalized ID collar.</div>
+    </figcaption>
+</figure>
+
+
+<figure>
+      <a href="dog6.jpg" target="_blank">
+      <img src="dog6.jpg" width="230" height="280" alt=""/> </a>
+<figcaption>
+    <div class="title">Happy Greeting</div>
+    <div class="description">An exuberant dog portrait capturing pure joy and enthusiasm on a fresh turquoise canvas.</div>
+</figcaption>
+</figure>
+
+</div>
+		
+<table>	
+<thead>
+  <tr>
+    <th>Title</th>
+    <th>Subject</th>
+    <th>Medium</th>
+	<th>Dimensions</th>
+	<th>Status</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Tiny Dreams</td>
+    <td>Cocker Spaniel</td>
+    <td>Acrylic</td>
+	<td>8" x 10"</td>
+	<td>SOLD</td>
+  </tr> 
+</tbody>
+	
+<tbody>
+  <tr>
+    <td>Noble Spirit</td>
+    <td>Pit Bull</td>
+    <td>Acrylic</td>
+	<td>8" x 8"</td>
+	<td>SOLD</td>
+  </tr> 
+</tbody>
+<tbody>
+  <tr>
+    <td>Bright Personality</td>
+    <td>Miniature Pinscher Mix</td>
+    <td>Acrylic</td>
+	<td>8" x 10"</td>
+	<td>SOLD</td>
+  </tr> 
+</tbody>
+<tbody>
+  <tr>
+    <td>Cozy Comfort</td>
+    <td>Yorkie</td>
+    <td>Acrylic</td>
+	<td>20" x 24"</td>
+	<td>SOLD</td>
+  </tr> 
+</tbody>
+<tbody>
+  <tr>
+    <td>Scooter's Joy</td>
+    <td>Border Terrier</td>
+    <td>Acrylic</td>
+	<td>8" x 10"</td>
+	<td>SOLD</td>
+  </tr> 
+</tbody>
+<tbody>
+  <tr>
+    <td> Happy Greeting</td>
+    <td>Labrador Retriever</td>
+    <td>Acrylic</td>
+	<td>8" x 10"</td>
+	<td>SOLD</td>
+  </tr> 
+</tbody>
+</table>
+		
+<div class="photos">
+<p>Photos Of Portraits</p>
+</div>	
+	
+<div class="grid-gallery">
+    <img src="yorkie.jpg" alt="yorkie"/>
+	<img src="minipinc.jpg" alt="minipinc"/>
+	<img src="lab.jpg" alt="lab"/>
+	<img src="graydog.jpg" alt="graydog"/>
+	</div>
+	
+<div class="colophon">
+	<p><strong>About this Portfolio</strong></p>
+    <p>This portfolio features hand-painted dog portraits created with acrylic on canvas. Each portrait in this collection was painted with heart and intention, created for customers who wanted to honor their beloved canine companions. Every brushstroke captures not just the likeness of a cherished pet, but the love and bond they share with their families. These hand-painted acrylic portraits are more than artwork—they're tributes to the joy, loyalty, and unconditional love that dogs bring into our lives. Whether it's a favorite toy, a trusted collar, or that special expression only their owner recognizes, each painting preserves a moment of connection.</p>
+</div>
+	</div>
+	
+</body>
+</html>
